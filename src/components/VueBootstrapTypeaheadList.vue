@@ -2,6 +2,7 @@
   <div class="list-group shadow">
     <vue-bootstrap-typeahead-list-item
       v-for="(item, id) in matchedItems" :key="id"
+      :index="id"
       :data="item.data"
       :html-text="highlight(item.text)"
       :background-variant="backgroundVariant"
