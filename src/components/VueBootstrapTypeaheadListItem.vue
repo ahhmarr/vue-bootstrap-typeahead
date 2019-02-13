@@ -5,7 +5,7 @@
     :class="textClasses"
     @mouseover="active = true"
     @mouseout="active = false"
-    :id="`result-${index}`"
+    :id="`result-${index+1}`"
   >
     <slot name="suggestion" v-bind="{ data: data, htmlText: htmlText }">
       <span v-html="htmlText"></span>
